@@ -1,5 +1,5 @@
-def func(x, y, &operation)
-  if operation
+def func(x, y, &strategy)
+  if strategy
     result = yield x, y
   else
     result = x*y
