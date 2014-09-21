@@ -8,6 +8,7 @@ def read_file_by_line
     yellow_lines << line
   end
   yellow_file.close   # don't forget to close!!!
+  yellow_lines
 end
 
 # Open and read a file using a block
