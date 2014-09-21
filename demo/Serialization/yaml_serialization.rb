@@ -1,8 +1,8 @@
 require 'yaml'
 
 schedule = [
-             {name: 'Soumya', id: '4985', days: ['M', 'F']},
-             {name: 'Galit',  id: '5483', days: ['T', 'W']}
+             { name: 'Soumya', id: '4985', days: ['M', 'F'] },
+             { name: 'Galit',  id: '5483', days: ['T', 'W'] }
            ]
 
 # Serialize the data
