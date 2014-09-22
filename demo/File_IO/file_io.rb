@@ -1,6 +1,6 @@
 # Demonstrate File I/O in Ruby
 
-# Open and read a file using a block
+# Open and read a file without using a block
 def read_file_by_line
   yellow_file = File.open('yellow.txt', 'r')
   yellow_lines = []

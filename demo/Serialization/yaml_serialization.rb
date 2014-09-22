@@ -7,7 +7,7 @@ schedule = [
 
 # Serialize the data
 File.open('teaching.yml', 'w') do |file|
-  file.puts teaching.to_yaml
+  file.puts schedule.to_yaml
 end
 
 # Deserialize the data
