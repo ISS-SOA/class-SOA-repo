@@ -1,4 +1,3 @@
-
 # sample HTML text to be searched
 html = "<!--TOCENIZERGEM\nThis is the text\nto be \nreplaced\nTOCENIZERGEM-->"
 puts html
