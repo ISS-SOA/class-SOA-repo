@@ -10,6 +10,7 @@ puts extract
 puts
 
 # regex example that substitutes text within head and tail markers
+# also demonstrates Ruby string interpoloation in regex
 token = 'REPLACE'
 head = "(.*#{token})"
 tail = "(#{token}.*$)"
