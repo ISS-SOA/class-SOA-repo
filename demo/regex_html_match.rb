@@ -1,6 +1,8 @@
 
 # sample HTML text to be searched
-html = "<!--TOCENIZERGEM\nThis is the text\nto be \nreplaced\nTOCENIZERGEM-->"
+html = "<!--TOCENIZERGEM\nThis is the old text\nto be \nreplaced\nTOCENIZERGEM-->"
+puts html
+puts
 
 # regex example to get text within head and tail markers
 extract = html.gsub(/(.*TOCENIZERGEM\N*\n)(.*)(\n\N*TOCENIZERGEM.*)/m, '\2')
