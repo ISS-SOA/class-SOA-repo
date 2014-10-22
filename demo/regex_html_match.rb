@@ -9,12 +9,13 @@ extract = html.gsub(/(.*REPLACE)(.*)(REPLACE.*)/m, '\2')
 puts extract
 puts
 
-# regex example that substitutes text within head and tail markers
+# regex example that substitutes text within given markers
 # also demonstrates Ruby string interpoloation in regex
 token = 'REPLACE'
 head = "(.*#{token})"
 tail = "(#{token}.*$)"
+body = "(.*)"
 
 content = ' this is the new text!'
-newhtml = html.gsub(/#{head}(.*)#{tail}/m, "\\1\n#{content}\n\\3")
+newhtml = html.gsub(/#{head}#{body}#{tail}/m, "\\1\n#{content}\n\\3")
 puts newhtml
