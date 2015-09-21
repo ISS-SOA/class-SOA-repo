@@ -29,11 +29,12 @@ end
 
 # Open and (re)write a file using a block
 def write_file_by_block
-  File.open('world.txt', 'w') do |file|
-    file.puts '"Around The World"'
-    file.puts
+  song = 'Around The World'
+  lyric = "#{song}, #{song}"
 
-    lyric = "Around the world, around the world"
+  File.open('world.txt', 'w') do |file|
+    file.puts "\"#{song}\""
+    file.puts
 
     18.times do
       4.times { file.puts lyric }
@@ -44,13 +45,15 @@ end
 
 # Open and spit out many lines at once
 def write_file_by_spitting
-  lyric = "Around the world, around the world"
+  song = 'Around The World'
+  lyric = "#{song}, #{song}"
+
   world_lyrics = ""
   18.times do
     4.times { world_lyrics << lyric + "\n" }
     world_lyrics <<  "\n"
   end
 
-  File.write('world.txt', "\"Around The World\"\n\n", mode: 'w')
+  File.write('world.txt', "\"#{song}\"\n\n", mode: 'w')
   File.write('world.txt', world_lyrics, mode: 'a')
 end
